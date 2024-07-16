@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#info">Info</a></li>
+            <li><a href="#about">About Us</a></li>
+        </ul>
+    </nav>
+   
+    <div id="home" class="page">
+        <div class="app-container">
+            <h1>Personal Finance Tracker</h1>
+            <img src="assets/personalfinancetracker.jpg" alt="Mobile Banking Concept" style="width: 300px; height: auto;">
+            <form id="add-transaction-form">
+                <input type="text" id="description" placeholder="Description" required>
+                <input type="number" id="amount" placeholder="Amount" step="0.01" required>
+                <input type="date" id="date" required>
+                <button type="submit">Add Transaction</button>
+            </form>
+            <div id="transactions-list"></div>
+            <div id="summary">
+                <h2>Summary</h2>
+                <p>Total Income: <span id="total-income">0.00</span></p>
+                <p>Total Expenses: <span id="total-expenses">0.00</span></p>
+                <p>Balance: <span id="balance">0.00</span></p>
+            </div>
+            <div id="buttons-container">
+                <button id="clear-transactions">Clear Transactions</button>
+                <button id="sort-transactions">Sort by Date</button>
+                <button id="filter-transactions">Filter by Category</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="page">
+        <div class="app-container">
+            <h1>Contact Us</h1>
+            <p>Email: <a href="mailto:melkizedekbal@gmail.com">melkizedekbal@gmail.com </a></p>
+            <p>Email: <a href="mailto:hadijaabdi823@gmail.com">hadijaabdi823@gmail.com </a></p>
+            <p>Phone: <a href="tel:+254745026001">+254745026001</a></p>
+            <p>Phone: <a href="tel:+254768169624">+254768169624</a></p>
+        </div>
+    </div>
+
+    <div id="info" class="page">
+        <div class="app-container">
+            <h1>Info</h1>
+            <img src="assets/info.jpeg" alt="Business Success Illustration" style="width: 300px; height: auto;">
+            <p>This is a personal finance tracker app designed to help you manage your finances effectively and work on your budget.</p>
+        </div>
+    </div>
+
+    <div id="about" class="page">
+        <div class="app-container">
+            <h1>About Us</h1>
+            <img src="assets/Aboutus.jpeg" alt="Man Calculating Bills" style="width: 300px; height: auto;">
+            <p>We are dedicated to providing tools and resources to empower individuals in managing their personal finances, Thank you for choosing us.</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

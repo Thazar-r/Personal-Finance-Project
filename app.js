@@ -8,16 +8,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let transactions = [];
 
-    // Fetch transactions from db.json
-    fetch('http://localhost:3000/transactions')
-        .then(response => response.json())
-        .then(data => {
-            transactions = data.transactions; // Assuming your data is structured like { "transactions": [] }
-            updateUI();
-        })
-        .catch(error => console.error('Error fetching transactions:', error));
+    // Fetch transactions from http://localhost:3000/transactions
+    function fetchTransactions() {
+        fetch('http://localhost:3000/transactions')
+            .then(response => response.json())
+            .then(data => {
+                transactions = data.transactions;
+                updateUI();
+            })
+            .catch(error => console.error('Error fetching transactions:', error));
+    }
 
-    // Function to update the UI
+    // Update the UI with transactions data
     function updateUI() {
         transactionsList.innerHTML = '';
         let income = 0;
@@ -52,12 +54,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const description = document.getElementById('description').value;
         const amount = parseFloat(document.getElementById('amount').value);
         const date = document.getElementById('date').value;
+        const category = document.getElementById('category').value; // Add category input
 
-        if (description && !isNaN(amount) && date) {
+        if (description && !isNaN(amount) && date && category) {
             const newTransaction = {
                 description,
                 amount,
-                date
+                date,
+                category
             };
 
             fetch('http://localhost:3000/transactions', {
@@ -92,9 +96,17 @@ document.addEventListener('DOMContentLoaded', function() {
             transactions.sort((a, b) => new Date(a.date) - new Date(b.date));
             updateUI();
         } else if (e.target.id === 'filter-transactions') {
-            const category = prompt('Enter category to filter:');
-            if (category) {
-                const filteredTransactions = transactions.filter(transaction => transaction.category.toLowerCase() === category.toLowerCase());
+            const categoryInput = document.createElement('input');
+            categoryInput.setAttribute('type', 'text');
+            categoryInput.setAttribute('placeholder', 'Enter category to filter');
+            categoryInput.setAttribute('id', 'filter-category-input');
+            
+            const submitButton = document.createElement('button');
+            submitButton.textContent = 'Filter';
+            submitButton.addEventListener('click', function() {
+                const category = document.getElementById('filter-category-input').value.toLowerCase();
+                const filteredTransactions = transactions.filter(transaction => transaction.category.toLowerCase() === category);
+                
                 transactionsList.innerHTML = '';
                 filteredTransactions.forEach(transaction => {
                     const transactionElement = document.createElement('div');
@@ -111,7 +123,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 totalIncome.textContent = filteredIncome.toFixed(2);
                 totalExpenses.textContent = filteredExpenses.toFixed(2);
                 balance.textContent = (filteredIncome - filteredExpenses).toFixed(2);
-            }
+            });
+
+            buttonsContainer.appendChild(categoryInput);
+            buttonsContainer.appendChild(submitButton);
         }
     });
 

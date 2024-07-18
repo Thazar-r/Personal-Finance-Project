@@ -19,9 +19,8 @@ This is a simple web application for tracking personal finances. It allows users
 
  How to Use
 
-1. Clone the repository:
-
-   bash
+1. Fork and Clone the repository:
+   copy the ssh key and head over to your terminal
    git clone <git@github.com:Thazar-r/Personal-Finance-Project.git>
    
 

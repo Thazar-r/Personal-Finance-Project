@@ -114,4 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
+
+    // Initial fetch of transactions when the page loads
+    fetchTransactions();
 });

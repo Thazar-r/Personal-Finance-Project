@@ -96,17 +96,10 @@ document.addEventListener('DOMContentLoaded', function() {
             transactions.sort((a, b) => new Date(a.date) - new Date(b.date));
             updateUI();
         } else if (e.target.id === 'filter-transactions') {
-            const categoryInput = document.createElement('input');
-            categoryInput.setAttribute('type', 'text');
-            categoryInput.setAttribute('placeholder', 'Enter category to filter');
-            categoryInput.setAttribute('id', 'filter-category-input');
-            
-            const submitButton = document.createElement('button');
-            submitButton.textContent = 'Filter';
-            submitButton.addEventListener('click', function() {
-                const category = document.getElementById('filter-category-input').value.toLowerCase();
+            const category = prompt('Enter category to filter').trim().toLowerCase();
+            if (category !== null && category !== '') {
                 const filteredTransactions = transactions.filter(transaction => transaction.category.toLowerCase() === category);
-                
+
                 transactionsList.innerHTML = '';
                 filteredTransactions.forEach(transaction => {
                     const transactionElement = document.createElement('div');
@@ -123,10 +116,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 totalIncome.textContent = filteredIncome.toFixed(2);
                 totalExpenses.textContent = filteredExpenses.toFixed(2);
                 balance.textContent = (filteredIncome - filteredExpenses).toFixed(2);
-            });
 
-            buttonsContainer.appendChild(categoryInput);
-            buttonsContainer.appendChild(submitButton);
+                // Add a button to clear the filter
+                const clearFilterButton = document.createElement('button');
+                clearFilterButton.textContent = 'Clear Filter';
+                clearFilterButton.addEventListener('click', function() {
+                    transactionsList.innerHTML = '';
+                    updateUI();
+                    buttonsContainer.removeChild(clearFilterButton);
+                });
+                buttonsContainer.appendChild(clearFilterButton);
+            }
         }
     });
 

@@ -1,21 +1,21 @@
 {
   "transactions": [
     {
-      "id": 1,
+      "id": "1",
       "description": "Groceries",
       "amount": -50.25,
       "date": "2024-07-18",
       "category": "Expenses"
     },
     {
-      "id": 2,
+      "id": "2",
       "description": "Salary",
       "amount": 2000,
       "date": "2024-07-15",
       "category": "Income"
     },
     {
-      "id": 3,
+      "id": "3",
       "description": "Dinner with friends",
       "amount": -30,
       "date": "2024-07-16",
@@ -68,6 +68,475 @@
       "description": "cows",
       "amount": -9000,
       "date": "2024-07-14",
+      "category": "expense"
+    },
+    {
+      "id": "2727",
+      "description": "laundry ",
+      "amount": -900,
+      "date": "2024-07-18",
+      "category": "expense"
+    },
+    {
+      "id": "81c1",
+      "description": "laundry ",
+      "amount": -900,
+      "date": "2024-07-18",
+      "category": "expense"
+    },
+    {
+      "id": "ee37",
+      "description": "laundry ",
+      "amount": -900,
+      "date": "2024-07-18",
+      "category": "expense"
+    },
+    {
+      "id": "26f4",
+      "description": "laundry ",
+      "amount": -900,
+      "date": "2024-07-18",
+      "category": "expense"
+    },
+    {
+      "id": "3f0a",
+      "description": "laundry ",
+      "amount": -900,
+      "date": "2024-07-18",
+      "category": "expense"
+    },
+    {
+      "id": "6ec2",
+      "description": "laundry ",
+      "amount": -900,
+      "date": "2024-07-18",
+      "category": "expense"
+    },
+    {
+      "id": "ce20",
+      "description": "laundry ",
+      "amount": -900,
+      "date": "2024-07-18",
+      "category": "expense"
+    },
+    {
+      "id": "9a09",
+      "description": "laundry ",
+      "amount": -900,
+      "date": "2024-07-18",
+      "category": "expense"
+    },
+    {
+      "id": "1647",
+      "description": "laundry ",
+      "amount": -900,
+      "date": "2024-07-18",
+      "category": "expense"
+    },
+    {
+      "id": "e1bc",
+      "description": "laundry ",
+      "amount": -900,
+      "date": "2024-07-18",
+      "category": "expense"
+    },
+    {
+      "id": "87c5",
+      "description": "laundry ",
+      "amount": -900,
+      "date": "2024-07-18",
+      "category": "expense"
+    },
+    {
+      "id": "6716",
+      "description": "laundry ",
+      "amount": -900,
+      "date": "2024-07-18",
+      "category": "expense"
+    },
+    {
+      "id": "8c3a",
+      "description": "laundry ",
+      "amount": -900,
+      "date": "2024-07-18",
+      "category": "expense"
+    },
+    {
+      "id": "6909",
+      "description": "salary",
+      "amount": 90000,
+      "date": "2024-07-18",
+      "category": "income"
+    },
+    {
+      "id": "f030",
+      "description": "salary",
+      "amount": 90000,
+      "date": "2024-07-18",
+      "category": "income"
+    },
+    {
+      "id": "5ac3",
+      "description": "salary",
+      "amount": 90000,
+      "date": "2024-07-18",
+      "category": "income"
+    },
+    {
+      "id": "5814",
+      "description": "salary",
+      "amount": 70000,
+      "date": "2024-07-29",
+      "category": "expense"
+    },
+    {
+      "id": "e42f",
+      "description": "salary",
+      "amount": 70000,
+      "date": "2024-07-29",
+      "category": "expense"
+    },
+    {
+      "id": "6177",
+      "description": "salary",
+      "amount": 70000,
+      "date": "2024-07-29",
+      "category": "expense"
+    },
+    {
+      "id": "2630",
+      "description": "salary",
+      "amount": 999,
+      "date": "2024-07-24",
+      "category": "expense"
+    },
+    {
+      "id": "27a8",
+      "description": "salary",
+      "amount": 999,
+      "date": "2024-07-24",
+      "category": "expense"
+    },
+    {
+      "id": "4c2f",
+      "description": "salary",
+      "amount": 999,
+      "date": "2024-07-24",
+      "category": "expense"
+    },
+    {
+      "id": "8ded",
+      "description": "salary",
+      "amount": 999,
+      "date": "2024-07-24",
+      "category": "expense"
+    },
+    {
+      "id": "9e78",
+      "description": "salary",
+      "amount": 999,
+      "date": "2024-07-24",
+      "category": "expense"
+    },
+    {
+      "id": "7017",
+      "description": "salary",
+      "amount": 999,
+      "date": "2024-07-24",
+      "category": "expense"
+    },
+    {
+      "id": "790c",
+      "description": "salary",
+      "amount": 999,
+      "date": "2024-07-24",
+      "category": "expense"
+    },
+    {
+      "id": "5e67",
+      "description": "salary",
+      "amount": 999,
+      "date": "2024-07-24",
+      "category": "expense"
+    },
+    {
+      "id": "bea5",
+      "description": "salary",
+      "amount": 999,
+      "date": "2024-07-24",
+      "category": "expense"
+    },
+    {
+      "id": "314f",
+      "description": "salary",
+      "amount": 999,
+      "date": "2024-07-24",
+      "category": "expense"
+    },
+    {
+      "id": "1b68",
+      "description": "salary",
+      "amount": 999,
+      "date": "2024-07-24",
+      "category": "expense"
+    },
+    {
+      "id": "e883",
+      "description": "salary",
+      "amount": 999,
+      "date": "2024-07-24",
+      "category": "expense"
+    },
+    {
+      "id": "5bf8",
+      "description": "salary",
+      "amount": 999,
+      "date": "2024-07-24",
+      "category": "expense"
+    },
+    {
+      "id": "4335",
+      "description": "salary",
+      "amount": 999,
+      "date": "2024-07-24",
+      "category": "expense"
+    },
+    {
+      "id": "53e8",
+      "description": "salary",
+      "amount": 999,
+      "date": "2024-07-24",
+      "category": "expense"
+    },
+    {
+      "id": "fecb",
+      "description": "salary",
+      "amount": 999,
+      "date": "2024-07-24",
+      "category": "expense"
+    },
+    {
+      "id": "fc84",
+      "description": "salary",
+      "amount": 999,
+      "date": "2024-07-24",
+      "category": "expense"
+    },
+    {
+      "id": "7515",
+      "description": "salary",
+      "amount": 999,
+      "date": "2024-07-24",
+      "category": "expense"
+    },
+    {
+      "id": "a371",
+      "description": "salary",
+      "amount": 999,
+      "date": "2024-07-24",
+      "category": "expense"
+    },
+    {
+      "id": "a044",
+      "description": "salary",
+      "amount": 999,
+      "date": "2024-07-24",
+      "category": "expense"
+    },
+    {
+      "id": "0d13",
+      "description": "salary",
+      "amount": 999,
+      "date": "2024-07-24",
+      "category": "expense"
+    },
+    {
+      "id": "ed2c",
+      "description": "salary",
+      "amount": 999,
+      "date": "2024-07-24",
+      "category": "expense"
+    },
+    {
+      "id": "7ac9",
+      "description": "salary",
+      "amount": 999,
+      "date": "2024-07-24",
+      "category": "expense"
+    },
+    {
+      "id": "eb12",
+      "description": "salary",
+      "amount": 999,
+      "date": "2024-07-24",
+      "category": "expense"
+    },
+    {
+      "id": "b467",
+      "description": "laundry ",
+      "amount": -900,
+      "date": "2024-07-16",
+      "category": "expense"
+    },
+    {
+      "id": "4791",
+      "description": "laundry ",
+      "amount": -900,
+      "date": "2024-07-16",
+      "category": "expense"
+    },
+    {
+      "id": "920a",
+      "description": "laundry ",
+      "amount": -900,
+      "date": "2024-07-16",
+      "category": "expense"
+    },
+    {
+      "id": "e5f4",
+      "description": "laundry ",
+      "amount": -900,
+      "date": "2024-07-16",
+      "category": "expense"
+    },
+    {
+      "id": "04e4",
+      "description": "laundry ",
+      "amount": -90,
+      "date": "2024-07-16",
+      "category": "expense"
+    },
+    {
+      "id": "eedf",
+      "description": "laundry ",
+      "amount": -90,
+      "date": "2024-07-16",
+      "category": "expense"
+    },
+    {
+      "id": "f75e",
+      "description": "laundry ",
+      "amount": -90,
+      "date": "2024-07-16",
+      "category": "expense"
+    },
+    {
+      "id": "9580",
+      "description": "laundry ",
+      "amount": -90,
+      "date": "2024-07-16",
+      "category": "expense"
+    },
+    {
+      "id": "e9f0",
+      "description": "laundry ",
+      "amount": -90,
+      "date": "2024-07-16",
+      "category": "expense"
+    },
+    {
+      "id": "b457",
+      "description": "laundry ",
+      "amount": -90,
+      "date": "2024-07-16",
+      "category": "expense"
+    },
+    {
+      "id": "a432",
+      "description": "laundry ",
+      "amount": -90,
+      "date": "2024-07-16",
+      "category": "expense"
+    },
+    {
+      "id": "fdd0",
+      "description": "laundry ",
+      "amount": -900,
+      "date": "2024-07-17",
+      "category": "expense"
+    },
+    {
+      "id": "11ce",
+      "description": "laundry ",
+      "amount": -900,
+      "date": "2024-07-17",
+      "category": "expense"
+    },
+    {
+      "id": "9878",
+      "description": "laundry ",
+      "amount": -900,
+      "date": "2024-07-17",
+      "category": "expense"
+    },
+    {
+      "id": "c24d",
+      "description": "cows",
+      "amount": -9000,
+      "date": "2024-07-19",
+      "category": "expense"
+    },
+    {
+      "id": "9132",
+      "description": "salary",
+      "amount": 90000,
+      "date": "2024-07-16",
+      "category": "income"
+    },
+    {
+      "id": "744f",
+      "description": "laundry ",
+      "amount": -900,
+      "date": "2024-07-16",
+      "category": "expense"
+    },
+    {
+      "id": "a313",
+      "description": "laundry ",
+      "amount": -900,
+      "date": "2024-07-16",
+      "category": "expense"
+    },
+    {
+      "id": "993a",
+      "description": "salary",
+      "amount": 90000,
+      "date": "2024-07-18",
+      "category": "income"
+    },
+    {
+      "id": "ca82",
+      "description": "laundry ",
+      "amount": -900,
+      "date": "2024-07-24",
+      "category": "expense"
+    },
+    {
+      "id": "9434",
+      "description": "laundry ",
+      "amount": -900,
+      "date": "2024-07-24",
+      "category": "expense"
+    },
+    {
+      "id": "7700",
+      "description": "salary",
+      "amount": 80000,
+      "date": "2024-07-17",
+      "category": "income"
+    },
+    {
+      "id": "6fec",
+      "description": "salary",
+      "amount": 90005,
+      "date": "2024-07-16",
+      "category": "income"
+    },
+    {
+      "id": "b0bf",
+      "description": "cows",
+      "amount": -9000,
+      "date": "2024-07-16",
       "category": "expense"
     }
   ]
